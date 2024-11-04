@@ -1,0 +1,7 @@
+Conclusions:  
+
+1. In the first script, I successfully sorted three integers using only three simple 'if' statements.   
+   
+2. In the second script, I created a mixed-type list and counted the string elements using a straightforward iteration method. The use of the type() function helped in identifying the strings.  
+
+3. Both tasks allowed practicing fundamental programming concepts including conditionals and loops, which are essential for solving problems in Python.
