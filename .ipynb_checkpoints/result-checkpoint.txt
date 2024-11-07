@@ -1,0 +1,4 @@
+List 1: [10, 20, 5, 30, 25] -> Two smallest: [5, 10]
+List 2: [15, 1, 3, 22, 7] -> Two smallest: [1, 3]
+List 3: [8, 4, 6, 2, 9] -> Two smallest: [2, 4]
+List 4: [12, 18, 5, 13, 11] -> Two smallest: [5, 11]
