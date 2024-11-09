@@ -1,35 +1,33 @@
-import requests  
-from bs4 import BeautifulSoup  
-
-url = 'https://gsom.spbu.ru/en/'  
-
-resp = requests.get(url)
-if resp.status_code == 200:  
-
-    soup = BeautifulSoup(resp.content, "html.parser")  
-    # List to hold PNG links  
-    png_links = []
-
-    # Finding all <img> tags and check their 'src' attribute for PNG links
-    for img in soup.find_all("img", src=True):
-        src = img['src']  
-# Checking if the 'src' ends with ".png"
-        if src.lower().endswith(".png"):  
-# Append the found PNG link   
-            png_links.append(src)
-
-    # Prepend base URL if needed (handling relative links)
-    base_url = "https://gsom.spbu.ru"  
-    full_png_links = []  
-
-    for link in png_links:  
-        # If the link is relative, prepend the base URL  
-        if link.lower().endswith(".png"):  
-            full_png_links.append(base_url + link)
-    count_png=len(full_png_links)
-
-    # Print the extracted PNG links 
-    print("Total_png_links: ", count_png)
-    print("Extracted PNG Links:")  
-    for link in full_png_links:  
-        print(link) 
+{
+ "cells": [
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "ffe864e0-a68a-478b-a147-73e509d92013",
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  }
+ ],
+ "metadata": {
+  "kernelspec": {
+   "display_name": "Python 3 (ipykernel)",
+   "language": "python",
+   "name": "python3"
+  },
+  "language_info": {
+   "codemirror_mode": {
+    "name": "ipython",
+    "version": 3
+   },
+   "file_extension": ".py",
+   "mimetype": "text/x-python",
+   "name": "python",
+   "nbconvert_exporter": "python",
+   "pygments_lexer": "ipython3",
+   "version": "3.10.8"
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 5
+}
